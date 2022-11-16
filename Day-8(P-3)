@@ -1,0 +1,42 @@
+#include <bits/stdc++.h>
+#include <math.h>
+
+using namespace std;
+
+
+int main()
+{
+  int I,k,sum=0,y,x,s=0;
+  cin>>I;
+  while (I!=0)
+    {
+      k=I%10;
+      sum=sum+k;
+      I=I/10;
+    }
+    y=sum;
+  if(sum<10)
+  {
+    cout<<sum;
+  }
+
+
+  else
+  {
+    while(sum>=10)
+      {
+      y=sum;
+      sum=0;
+         while (y!=0)
+         {
+            x=y%10;
+            sum=sum+x;
+            y=y/10;
+         }
+         }
+      }
+
+    cout<<sum;
+  }
+
+
