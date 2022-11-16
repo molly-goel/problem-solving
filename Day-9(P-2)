@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int a,b,i,x,z,y,j=1,l;
+    int k;
+    long long p=1;
+    cin>>a>>b>>k;
+      for(i=1;i<=b;i++)
+      {
+         p=p*a;
+      }
+    for(l=0;l<k-1;l++)
+    {
+        j=j*10;
+    }
+    x=p/j;
+    z=x%10;
+    cout<<z;
+    
+    return 0;
+}
