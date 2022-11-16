@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,count=0,x,k,l,y,sum=0,z,s=0;
+    cin>>n;
+    x=n;
+    l=n;
+    while(x!=0)
+    {
+        count=count+1;
+        x=x/10;
+    }
+    if(count%2==0)
+    {
+        cout<<"not possible";
+    }
+    else
+    {
+      for(k=0;k<count/2;k++)
+        {
+          y=l%10;
+          sum=sum+y;
+          l=l/10;
+        }
+     l=l/10;
+     while(l!=0)
+     {
+         z=l%10;
+         s=s+z;
+         l=l/10;
+     }
+     if(sum==s)
+     {
+         cout<<"number is balanced";
+     }
+     else
+     {
+         cout<<"not balanced";
+     }
+    }
+  
+    return 0;
+}
